@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,400&family=Oswald:wght@500&display=swap');
+
+.navbar-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 48px !important;
+    color: #ff7b00 !important;
+
+    margin-left: 15% !important;
+    margin-right: 10% !important;
+}
+
+.navbar-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px !important;
+    color: white !important;
+
+    margin-left: 30% !important;
+}
+
+.navbar-link:hover {
+    color: #bfbfbf !important;
+}

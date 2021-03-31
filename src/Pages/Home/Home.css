@@ -2,4 +2,53 @@
     height: 100vh;
     background-image: url('banner.jpg');
     background-size: cover;
+
+    overflow: hidden;
+}
+
+.banner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 50vw;
+
+    margin-top: 32vh;
+    margin-left: 15%;
+}
+
+.banner-text1 {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+}
+
+.banner-text2 {
+    font-family: 'Oswald', sans-serif;
+
+    background-image: linear-gradient(45deg, #ff7b00, magenta);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+.banner-button-container{
+    margin-top: 20px;
+    width: 35%;
+}
+
+.banner-button {
+    background-color:  #ff7b00 !important;
+    border: none !important;
+
+    width: 100%;
+}
+
+.banner-button:focus {
+    box-shadow: none !important;
+}
+
+.banner-button:hover {
+    transform: scale(1.03);
 }
