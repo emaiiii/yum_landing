@@ -5,11 +5,11 @@ import './Navigation.css';
 function Navigation() {
     return(
         <Navbar fixed="top">
-            <Navbar.Brand className="navbar-title" href="#home">FitLib</Navbar.Brand>
+            <Navbar.Brand className="navbar-title" href="/">FitLib</Navbar.Brand>
             <Nav className="mr-auto">
-                <Nav.Link className="navbar-link" href="#home">Home</Nav.Link>
-                <Nav.Link className="navbar-link" href="#features">About Us</Nav.Link>
-                <Nav.Link className="navbar-link" href="#pricing">Pricing</Nav.Link>
+                <Nav.Link className="navbar-link" href="/">Home</Nav.Link>
+                <Nav.Link className="navbar-link" href="/AboutUs">About Us</Nav.Link>
+                <Nav.Link className="navbar-link" href="/ContactUs">Contact Us</Nav.Link>
             </Nav>
         </Navbar>
     );

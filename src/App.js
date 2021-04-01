@@ -12,6 +12,16 @@ function App() {
       <div className="App">
           <Switch>
             
+            {/*--About Us Page--*/}
+            <Route path="/AboutUs">
+              <h1>About Us</h1>
+            </Route>
+
+            {/*--Contact Us Page--*/}
+            <Route path="/AboutUs">
+              <h1>Contact Us</h1>
+            </Route>
+
             {/*--Home Page--*/}
             <Route path="/">
               <Home/>
