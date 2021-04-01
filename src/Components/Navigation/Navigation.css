@@ -6,7 +6,7 @@
     font-size: 48px !important;
     color: #ff7b00 !important;
 
-    margin-left: 15% !important;
+    margin-left: 10% !important;
     margin-right: 10% !important;
 }
 
@@ -16,6 +16,8 @@
     color: white !important;
 
     margin-left: 30% !important;
+
+    white-space: nowrap;
 }
 
 .navbar-link:hover {
