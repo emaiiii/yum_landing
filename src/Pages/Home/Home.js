@@ -26,8 +26,8 @@ function Home() {
                 </div>
             </div>
 
-            <div className="footer">
-                <h1>©FitLib</h1>
+            <div className="info1-section">
+                <h1 className="banner-text1 info1-section-text">Learn From the Best to Be the Best</h1>
             </div>
         </div>
     );

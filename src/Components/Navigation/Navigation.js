@@ -4,7 +4,7 @@ import './Navigation.css';
 
 function Navigation() {
     return(
-        <Navbar fixed="top">
+        <Navbar className="navbar-container" fixed="top">
             <Navbar.Brand className="navbar-title" href="/">FitLib</Navbar.Brand>
             <Nav className="mr-auto">
                 <Nav.Link className="navbar-link" href="/">Home</Nav.Link>

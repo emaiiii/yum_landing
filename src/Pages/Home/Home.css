@@ -11,9 +11,10 @@
 
     background: rgba(0, 0, 0, 0.5);
 
-    min-height: 50vh;
-    padding: 15px;
-    margin-top: 20vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+
+    margin-top: 98px;
 }
 
 .banner-container {
@@ -43,13 +44,14 @@
 }
 
 .banner-button-container{
-    margin-top: 20px;
+    margin-top: 30px;
     width: 35%;
 }
 
 .banner-button {
     background-color:  #ff7b00 !important;
     border: none !important;
+    border-radius: 20px !important;
 
     width: 100%;
 }
@@ -91,12 +93,17 @@
     left: 0;
 }
 
-.footer {
-    position: absolute;
-    color: white;
+.info1-section {
+    display: flex;
+    justify-content: center;
 
-    right: 0;
-    bottom: 0;
+    background: white;
 
-    margin-right: 10%;
+    min-height: 100%;
+    padding-top: 10vh;
+}
+
+.info1-section-text {
+    color: black;
+    font-size: 4.5rem;
 }
