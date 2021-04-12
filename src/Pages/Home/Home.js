@@ -1,7 +1,7 @@
 import React from 'react';
 import {Button} from 'react-bootstrap';
 import Navigation from '../../Components/Navigation/Navigation';
-import homeVideo from './landing-video1.mp4';
+import homeVideo from '../../Images/landing-video1.mp4';
 
 import './Home.css';
 
