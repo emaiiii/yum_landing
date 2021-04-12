@@ -1,3 +1,5 @@
+@import "~animate.css/animate.css";
+
 .font1 {
     font-family: 'Oswald', sans-serif;
 }
@@ -29,6 +31,10 @@
     width: 50vw;
 
     margin-left: 10%;
+
+    
+    animation: fadeIn;     
+    animation-duration: 2s;
 }
 
 .banner-text1 {
@@ -100,19 +106,23 @@
     left: 0;
 }
 
+.newsletter-div {
+    background: white;
+    min-height: 100%;
+}
+
 .newsletter-container{
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    background: white;
-
-    min-height: 100%;
-
     padding: auto;
     padding-top: 25px;
 
     margin: auto;
+
+    animation: slideInUp;
+    animation-duration: 2s;
 }
 
 .newsletter-header {

@@ -2,6 +2,7 @@ import React from 'react';
 import {Button} from 'react-bootstrap';
 import Navigation from '../../Components/Navigation/Navigation';
 import homeVideo from './landing-video1.mp4';
+
 import './Home.css';
 
 function Home() {
@@ -26,13 +27,15 @@ function Home() {
                 </div>
             </div>
 
-            <div className="newsletter-container">
-                <h1 className="font1 newsletter-header">Keep Up With Us While We Are Under Development</h1>
-                <h1 className="newsletter-info">Sign Up For Our Mailing List</h1>
-                <form className="form-container">
-                    <input className="newsletter-input" type="email" id="newsletter-email" placeholder="Your Email Address"></input>
-                    <Button className="newsletter-button" id="newsletter-button" size="lg">Sign Up</Button>
-                </form>
+            <div className="newsletter-div">
+                <div className="newsletter-container">
+                    <h1 className="font1 newsletter-header">Keep Up With Us While We Are Under Development</h1>
+                    <h1 className="newsletter-info">Sign Up For Our Mailing List</h1>
+                    <form className="form-container">
+                        <input className="newsletter-input" type="email" id="newsletter-email" placeholder="Your Email Address"></input>
+                        <Button className="newsletter-button" id="newsletter-button" size="lg">Sign Up</Button>
+                    </form>
+                </div>
             </div>
         </div>
     );
