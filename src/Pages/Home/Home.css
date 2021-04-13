@@ -109,6 +109,9 @@
 .newsletter-div {
     background: white;
     min-height: 100%;
+
+    animation: slideInUp;
+    animation-duration: 2s;
 }
 
 .newsletter-container{
@@ -120,9 +123,6 @@
     padding-top: 25px;
 
     margin: auto;
-
-    animation: slideInUp;
-    animation-duration: 2s;
 }
 
 .newsletter-header {
