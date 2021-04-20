@@ -22,13 +22,13 @@ function Home() {
                     <h1 className="banner-text2">Become The Best Version of Yourself</h1>
         
                     <div className="button-container">
-                        <Button className="banner-button" variant="outline-warning" size="sm">For Creators</Button>
-                        <Button className="banner-button" variant="outline-warning" size="sm">For Users</Button>
+                        <Button className="banner-button" variant="outline-warning" size="sm" href="#creator-sct">For Creators</Button>
+                        <Button className="banner-button" variant="outline-warning" size="sm" href="#user-sct">For Users</Button>
                     </div>
                     </section>
             </div>
 
-            <div className="home-container2">
+            <div className="home-container2" id="user-sct">
                 <div className="banner-container2">
                     <h1 className="f1 tc mb3 fcOrange">Transform The Way You Learn To Work Out</h1>
                     <h1 className="f3 fw1 tc mb4">On Fitlib, gain access to exclusive workout content from your favorite fitness creators.
@@ -60,11 +60,11 @@ function Home() {
             <div className="info-spacer1">
                 <div className="info-spacer1-container">
                     <h1 className="f1 fw2 spacer-text1">Join Our Mailing List to Receive Updates</h1>
-                    <Button variant="outline-warning" size="lg">Let's Go</Button>
+                    <Button variant="outline-warning" size="lg" href="#newsletter-sct">Let's Go</Button>
                 </div>
             </div>
 
-            <div className="home-container3">
+            <div className="home-container3" id="creator-sct">
                 <div className="banner-container3">
                     <h1 className="f1 tc fcWhite">Power To Fitness Creators</h1>
                     <h1 className="f3 fw1 tc fcWhite">On Fitlib, fitness creators will have the tools to create an online business 
@@ -93,7 +93,7 @@ function Home() {
             </div>
 
             {/*Newsletter*/}
-            <div className="newsletter-div">
+            <div className="newsletter-div" id="newsletter-sct">
                 <div className="newsletter-container">
                     <h1 className="font1 newsletter-header">Keep Up With Us While We Are Under Development</h1>
                     <h1 className="newsletter-info">Sign Up For Our Mailing List</h1>
