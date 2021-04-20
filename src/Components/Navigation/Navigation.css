@@ -5,16 +5,14 @@
     margin: 0;
 }
 
-.navbar-container {
-    background: rgba(0, 0, 0, 0.4);
-}
-
 .navbar-title {
     font-family: 'Oswald', sans-serif;
     font-size: 48px !important;
     color: #ff7b00 !important;
 
-    margin-left: 10% !important;
+    -webkit-text-stroke: 1px black;
+
+    margin-left: 7% !important;
     margin-right: 10% !important;
 }
 

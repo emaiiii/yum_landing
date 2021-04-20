@@ -13,7 +13,7 @@ function AboutUs() {
                 <div className="sct1-info">
                     <h1 className="f3 mb3">Founder</h1>
                     <img src={pushup} alt="spacer"/>
-                    <h1 className="f2 mt3 mb3">Meet Erik Mai.</h1>
+                    <h1 className="f2 mt3 mb3">Meet Erik and Andrew.</h1>
                     <h2 className="f3">He Wants People to be Happy</h2>
                 </div>
             </div>

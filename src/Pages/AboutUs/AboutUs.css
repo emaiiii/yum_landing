@@ -5,24 +5,6 @@
     overflow: hidden;
 }
 
-.aboutus-sct1 {
-    height: 100vh;
-    background-color: #ff7b00;
-}
-
-.sct1-info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    height: 100%;
-    width: 50vw;
-    margin: auto;
-
-    animation: fadeIn;
-    animation-duration: 2s;
-}
 
 .aboutus-sct2 {
     height: 100vh;
