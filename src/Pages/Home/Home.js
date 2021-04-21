@@ -1,5 +1,7 @@
 import React from 'react';
 import {Button} from 'react-bootstrap';
+import MailchimpSubscribe from "react-mailchimp-subscribe";
+
 import Navigation from '../../Components/Navigation/Navigation';
 import teacher from '../../Images/teacher.png';
 import schedule from '../../Images/schedule.png';
@@ -12,6 +14,9 @@ import relationship from '../../Images/relationship.png';
 import './Home.css';
 
 function Home() {
+
+    const SimpleForm = () => <MailchimpSubscribe url={process.env.REACT_APP_MAILCHIMP_URL}/>
+
     return(    
         <div className="home-page">
             <Navigation/>
@@ -32,26 +37,26 @@ function Home() {
                 <div className="banner-container2">
                     <h1 className="f1 tc mb3 fcOrange">Transform The Way You Learn To Work Out</h1>
                     <h1 className="f3 fw1 tc mb4">On FitLib, gain access to exclusive workout content from your favorite fitness creators.
-                    See what kind of work it takes to gain and maintain the physiques that you look up to. Learn and incorporate
-                    this new knowledge into your own workout routines. </h1>
+                    See what kind of work goes into building the strength and physique of your dreams. Learn and incorporate
+                    this new knowledge into your own workout routines.</h1>
 
                     <div className="info1-container">
                         <div className="info1-sct">
                             <img className="info1-pic" src={teacher} alt="s1"/>
-                            <h1 className="f4 fw5 fcOrange">Get Exlusive Content</h1>
-                            <h1 className="f4 fw1 tc">See what kind of work and knowledge goes into building the physiques of your favorite fitness creators.</h1>
+                            <h1 className="f4 fw5 fcOrange">Get Exclusive Content</h1>
+                            <h1 className="f4 fw1 tc">Learn from fitness creators to help keep you constantly progressing towards your fitness goals.</h1>
                         </div>
 
                         <div className="info1-sct">
                             <img className="info1-pic" src={schedule} alt="s2"/>
                             <h1 className="f4 fw5 fcOrange">Get a Scheduler</h1>
-                            <h1 className="f4 fw1 tc">Have access to an easy to use scheduler tool to plan your workouts and keep yourself on track to achieve your goals.</h1>
+                            <h1 className="f4 fw1 tc">Have access to an easy-to-use scheduler tool to plan your workouts and keep yourself on track of your goals.</h1>
                         </div>
 
                         <div className="info1-sct">
                             <img className="info1-pic" src={change} alt="s3"/>
                             <h1 className="f4 fw5 fcOrange">Make Workouts Your Own</h1>
-                            <h1 className="f4 fw1 tc">Be able to create and plan workouts or personalize workouts that you import from fitness creators.</h1>
+                            <h1 className="f4 fw1 tc">Be able to create and personalize workouts that you import from fitness creators themselves.</h1>
                         </div>
                     </div>
                 </div>
@@ -67,9 +72,9 @@ function Home() {
             <div className="home-container3" id="creator-sct">
                 <div className="banner-container3">
                     <h1 className="f1 tc fcWhite">Power To Fitness Creators</h1>
-                    <h1 className="f3 fw1 tc fcWhite">On FitLib, fitness creators will have the tools to create an online business 
+                    <h1 className="f3 fw1 tc fcWhite">On FitLib, fitness creators have the tools to create an online business 
                     without having to worry about the technological side of having an online business. As a fitness creator starting
-                    on FitLib, you will be entering the business of helping users towards achieving their fitness goals.</h1>
+                    on FitLib, you are entering the business of helping users towards achieving their fitness goals.</h1>
                     <h1 className="f2 tc mt4">What's in it for Creators?</h1>
 
                     <div className="info2-container">
@@ -81,12 +86,12 @@ function Home() {
                         <div className="info2-sct">
                             <img className="info2-pic" src={savemoney} alt="s5"/>
                             <h1 className="f4 fw5">Save on Tech Expenses</h1>
-                            <h1 className="f4 fw1 tc">Avoid the expenses of building an online fitness business—focus on the fitness and leave the tech to us.</h1>
+                            <h1 className="f4 fw1 tc">Avoid the expenses of building an online business—focus on the fitness and leave the tech to us.</h1>
                         </div>
                         <div className="info2-sct">
                             <img className="info2-pic" src={relationship} alt="s6"/>
                             <h1 className="f4 fw5">Connect With Your Biggest Fans</h1>
-                            <h1 className="f4 fw1 tc">Engage on a deeper level with fans that look up to you and want to learn from you.</h1>
+                            <h1 className="f4 fw1 tc">Take on a deeper level of engagement with fans that look up to you and want to learn from you.</h1>
                         </div>
                     </div>
                 </div>
@@ -98,8 +103,17 @@ function Home() {
                     <h1 className="font1 newsletter-header">Keep Up With Us While We Are Under Development</h1>
                     <h1 className="newsletter-info">Sign Up For Our Mailing List</h1>
                     <form className="form-container">
-                        <input className="newsletter-input" type="email" id="newsletter-email" placeholder="Your Email Address"></input>
-                        <Button className="newsletter-button" id="newsletter-button" size="lg">Sign Up</Button>
+                        <MailchimpSubscribe
+                            url={process.env.REACT_APP_MAILCHIMP_URL}
+                            render={({ subscribe, status, message }) => (
+                            <div>
+                                <SimpleForm onSubmitted={formData => subscribe(formData)} />
+                                {status === "sending" && <div style={{ color: "black" }}>sending...</div>}
+                                {status === "error" && <div style={{ color: "black" }} dangerouslySetInnerHTML={{__html: message}}/>}
+                                {status === "success" && <div style={{ color: "black" }}>Subscribed</div>}
+                            </div>
+                            )}
+                        />
                     </form>
                 </div>
             </div>

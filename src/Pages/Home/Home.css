@@ -4,6 +4,45 @@ html{
     scroll-behavior: smooth;
 }
 
+{/*For mailchimp form newsletter styling*/}
+input {
+    background: #f2f2f2;
+
+    width: 30vw;
+    height: 4vh; 
+
+    padding: 5px;
+    padding-left: 15px;
+    
+    border-radius: 20px;
+    border: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    background: #ff7b00 !important;
+    color: white;
+
+    width: 8vw;
+    height: 4vh;
+    
+    margin-left: 10px;
+    padding: 0 !important; 
+
+    border: none !important;
+    border-radius: 20px !important;
+}
+
+button:hover {
+    filter: brightness(90%);
+    cursor: pointer;
+}
+
+{/*//////////////////////////////////////*/}
+
 .font1 {
     font-family: 'Oswald', sans-serif;
 }
@@ -56,8 +95,6 @@ html{
     color: white;
     font-size: 2;
     font-weight: 200;
-    
-    margin-top: 15pt;
 }
 
 .button-container {
@@ -233,39 +270,4 @@ html{
     justify-content: center;
 
     margin-top: 20px;
-}
-
-.newsletter-input {
-    background: #f2f2f2;
-
-    width: 30vw;
-    height: 4vh; 
-
-    padding: 5px;
-    padding-left: 15px;
-    
-    border-radius: 20px;
-    border: none;
-}
-
-.newsletter-input:focus {
-    outline: none;
-}
-
-.newsletter-button {
-    background: #ff7b00 !important;
-
-    width: 8vw;
-    height: 4vh;
-    
-    margin-left: 10px;
-    padding: 0 !important; 
-
-    border: none !important;
-    border-radius: 20px !important;
-}
-
-.newsletter-button:hover {
-    filter: brightness(90%);
-    cursor: pointer;
 }
