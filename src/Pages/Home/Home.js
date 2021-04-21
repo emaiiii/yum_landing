@@ -31,7 +31,7 @@ function Home() {
             <div className="home-container2" id="user-sct">
                 <div className="banner-container2">
                     <h1 className="f1 tc mb3 fcOrange">Transform The Way You Learn To Work Out</h1>
-                    <h1 className="f3 fw1 tc mb4">On Fitlib, gain access to exclusive workout content from your favorite fitness creators.
+                    <h1 className="f3 fw1 tc mb4">On FitLib, gain access to exclusive workout content from your favorite fitness creators.
                     See what kind of work it takes to gain and maintain the physiques that you look up to. Learn and incorporate
                     this new knowledge into your own workout routines. </h1>
 
@@ -39,7 +39,7 @@ function Home() {
                         <div className="info1-sct">
                             <img className="info1-pic" src={teacher} alt="s1"/>
                             <h1 className="f4 fw5 fcOrange">Get Exlusive Content</h1>
-                            <h1 className="f4 fw1 tc">See what kind work and knowledge goes into building the physiques of your favorite fitness creators.</h1>
+                            <h1 className="f4 fw1 tc">See what kind of work and knowledge goes into building the physiques of your favorite fitness creators.</h1>
                         </div>
 
                         <div className="info1-sct">
@@ -67,7 +67,7 @@ function Home() {
             <div className="home-container3" id="creator-sct">
                 <div className="banner-container3">
                     <h1 className="f1 tc fcWhite">Power To Fitness Creators</h1>
-                    <h1 className="f3 fw1 tc fcWhite">On Fitlib, fitness creators will have the tools to create an online business 
+                    <h1 className="f3 fw1 tc fcWhite">On FitLib, fitness creators will have the tools to create an online business 
                     without having to worry about the technological side of having an online business. As a fitness creator starting
                     on FitLib, you will be entering the business of helping users towards achieving their fitness goals.</h1>
                     <h1 className="f2 tc mt4">What's in it for Creators?</h1>
