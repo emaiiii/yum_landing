@@ -17,6 +17,10 @@ function Home() {
 
     const SimpleForm = () => <MailchimpSubscribe url={process.env.REACT_APP_MAILCHIMP_URL}/>
 
+    function handleSubmit(e) {
+        e.preventDefault();
+    }
+
     return(    
         <div className="home-page">
             <Navigation/>
@@ -102,7 +106,7 @@ function Home() {
                 <div className="newsletter-container">
                     <h1 className="font1 newsletter-header">Keep Up With Us While We Are Under Development</h1>
                     <h1 className="newsletter-info">Sign Up For Our Mailing List</h1>
-                    <form className="form-container">
+                    <form className="form-container" onSubmit={handleSubmit}>
                         <MailchimpSubscribe
                             url={process.env.REACT_APP_MAILCHIMP_URL}
                             render={({ subscribe, status, message }) => (
