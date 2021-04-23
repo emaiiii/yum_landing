@@ -39,8 +39,8 @@ function Home() {
 
             <div className="home-container2" id="user-sct">
                 <div className="banner-container2">
-                    <h1 className="f1 tc mb3 fcOrange">Transform The Way You Learn To Work Out</h1>
-                    <h1 className="f3 fw1 tc mb4">On FitLib, gain access to exclusive workout content from your favorite fitness creators.
+                    <h1 className="f1 tc mb3 fcOrange txt1-mb2">Transform The Way You Learn To Work Out</h1>
+                    <h1 className="f3 fw1 tc mb4 txt2-mb2">On FitLib, gain access to exclusive workout content from your favorite fitness creators.
                     See what kind of work goes into building the strength and physique of your dreams. Learn and incorporate
                     this new knowledge into your own workout routines.</h1>
 
@@ -69,17 +69,17 @@ function Home() {
             <div className="info-spacer1">
                 <div className="info-spacer1-container">
                     <h1 className="f1 fw2 spacer-text1">Join Our Mailing List to Receive Updates</h1>
-                    <Button variant="outline-warning" size="lg" href="#newsletter-sct">Let's Go</Button>
+                    <Button className="info-button-mb" variant="outline-warning" size="lg" href="#newsletter-sct">Let's Go</Button>
                 </div>
             </div>
 
             <div className="home-container3" id="creator-sct">
                 <div className="banner-container3">
-                    <h1 className="f1 tc fcWhite">Power To Fitness Creators</h1>
-                    <h1 className="f3 fw1 tc fcWhite">On FitLib, fitness creators have the tools to create an online business 
+                    <h1 className="f1 tc fcWhite txt1-mb2">Power To Fitness Creators</h1>
+                    <h1 className="f3 fw1 tc fcWhite txt2-mb2">On FitLib, fitness creators have the tools to create an online business 
                     without having to worry about the technological side of having an online business. As a fitness creator starting
                     on FitLib, you are entering the business of helping users towards achieving their fitness goals.</h1>
-                    <h1 className="f2 tc mt4">What's in it for Creators?</h1>
+                    <h1 className="f2 tc mt4 txt1-mb2">What's in it for Creators?</h1>
 
                     <div className="info2-container">
                         <div className="info2-sct">
@@ -104,7 +104,7 @@ function Home() {
             {/*Newsletter*/}
             <div className="newsletter-div" id="newsletter-sct">
                 <div className="newsletter-container">
-                    <h1 className="font1 newsletter-header">Keep Up With Us While We Are Under Development</h1>
+                    <h1 className="font1 tc newsletter-header">Keep Up With Us While We Are Under Development</h1>
                     <h1 className="newsletter-info">Sign Up For Our Mailing List</h1>
                     <form className="form-container" onSubmit={handleSubmit}>
                         <MailchimpSubscribe

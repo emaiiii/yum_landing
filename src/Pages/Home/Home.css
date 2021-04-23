@@ -93,7 +93,7 @@ button:hover {
 
 .banner-text2 {
     color: white;
-    font-size: 2;
+    font-size: 2vw;
     font-weight: 200;
 }
 
@@ -125,7 +125,8 @@ button:hover {
 {/*//////////////////////////////////////////////////*/}
 
 .home-container2 {
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     background-color: white;
 }
 
@@ -137,7 +138,7 @@ button:hover {
     height: 100%;
     width: 70vw;
     margin: auto;
-    padding-top: 17vh;
+    padding-top: 13vh;
 
     animation: fadeIn;
     animation-duration: 2s;
@@ -191,7 +192,8 @@ button:hover {
 {/*//////////////////////////////////////////////////*/}
 
 .home-container3 {
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     background-color: #ff7b00;
 }
 
@@ -202,7 +204,7 @@ button:hover {
     height: 100%;
     width: 70vw;
     margin: auto;
-    padding-top: 17vh;
+    padding-top: 13vh;
 
     animation: fadeIn;
     animation-duration: 2s;
@@ -270,4 +272,124 @@ button:hover {
     justify-content: center;
 
     margin-top: 20px;
+}
+
+
+{/*/////////////////////////////////*/}
+{/*Mobile responsiveness*/}
+
+@media only screen and (max-width: 700px) {
+    .home-page {
+        height: 520vh;
+    }
+
+    {/*home container 1 stuff*/}
+    .banner-container1 {
+        width: 80vw;
+    }
+
+    .banner-text1 {
+        font-size: 6vw;
+    }
+
+    .banner-text2 {
+        font-size: 5vw;
+    }
+
+    .banner-button {
+        font-size: 3vw !important;
+        width: 30vw;
+    }
+
+    {/*home container 2 stuff*/} 
+    .home-container2{
+        height: auto;
+        min-height: 200vh;
+    }
+    .banner-container2 {
+        padding-top: 10vh;
+        width: 80vw;
+    }
+    .txt1-mb2 {
+        font-size: 6vw !important;
+    }
+
+    .txt2-mb2 {
+        font-size: 5vw !important;
+
+        margin-bottom: 0 !important;
+    }
+
+    .info1-container {
+        flex-direction: column;
+    }
+
+    .info1-sct {
+        width: 100%;
+    }
+
+    {/*////////////////////////////////////*/}
+    {/*spacer stuff*/}
+    .spacer-text1 {
+        font-size: 5vw !important;
+        margin-right: 0;
+        margin-left: 10vw;
+    }
+
+    .info-button-mb {
+        font-size: 4vw !important;
+        width: 30vw;
+
+        margin-right: 10vw;
+    }
+
+    {/*////////////////////////////////////*/}
+    {/*home container 3 stuff*/}
+    .home-container3 {
+        height: auto;
+        min-height: 200vh;
+    }
+
+    .banner-container3 {
+        padding-top: 10vh;
+        width: 80vw;
+    }
+
+    .info2-container {
+        flex-direction: column;
+    }
+
+    .info2-sct {
+        width: 100%;
+    }
+
+    {/*////////////////////////////////////*/}
+    {/*newsletter stuff*/}
+    .newsletter-div {
+        height: 40vh;
+    }
+
+    .newsletter-container {
+        width: 80%;
+    }
+
+    .newsletter-header {
+        font-size: 6vw !important;
+    }
+
+    .newsletter-info {
+        font-size: 5vw !important;
+    }
+
+    .form-container {
+        flex-direction: column;
+    }
+
+    input {
+        width: 60vw;
+    }
+
+    button {
+        width: 20vw;
+    }
 }
