@@ -27,22 +27,20 @@ function Home() {
 
             <div className="home-container1">
                 <section className="banner-container1">
-                    <h1 className="banner-text1">Gain Access to Exclusive Work Out Content From Your Favorite Fitness Creators</h1>
-                    <h1 className="banner-text2">Become The Best Version of Yourself</h1>
+                    <h1 className="banner-text1">Discover <span className="banner-text1-hl">The Real Best Restaurants</span> Around You Through Food Experts Near You</h1>
+                    <h1 className="banner-text2">Don't Be Disappointed With Your Next Meal</h1>
         
                     <div className="button-container">
-                        <Button className="banner-button" variant="outline-warning" size="sm" href="#creator-sct">For Creators</Button>
-                        <Button className="banner-button" variant="outline-warning" size="sm" href="#user-sct">For Users</Button>
+                        <Button className="banner-button" size="sm" href="#creator-sct">For Creators</Button>
+                        <Button className="banner-button" size="sm" href="#user-sct">For Users</Button>
                     </div>
                     </section>
             </div>
 
             <div className="home-container2" id="user-sct">
                 <div className="banner-container2">
-                    <h1 className="f1 tc mb3 fcOrange txt1-mb2">Transform The Way You Learn To Work Out</h1>
-                    <h1 className="f3 fw1 tc mb4 txt2-mb2">On FitLib, gain access to exclusive workout content from your favorite fitness creators.
-                    See what kind of work goes into building the strength and physique of your dreams. Learn and incorporate
-                    this new knowledge into your own workout routines.</h1>
+                    <h1 className="f1 tc mb3 fcOrange txt1-mb2">Transform The Way You Find Your Next Meal</h1>
+                    <h1 className="f3 fw1 tc mb4 txt2-mb2">hello</h1>
 
                     <div className="info1-container">
                         <div className="info1-sct">
@@ -75,7 +73,7 @@ function Home() {
 
             <div className="home-container3" id="creator-sct">
                 <div className="banner-container3">
-                    <h1 className="f1 tc fcWhite txt1-mb2">Power To Fitness Creators</h1>
+                    <h1 className="f1 tc fcWhite txt1-mb2">Become A Food Expert Today</h1>
                     <h1 className="f3 fw1 tc fcWhite txt2-mb2">On FitLib, fitness creators have the tools to create an online business 
                     without having to worry about the technological side of having an online business. As a fitness creator starting
                     on FitLib, you are entering the business of helping users towards achieving their fitness goals.</h1>

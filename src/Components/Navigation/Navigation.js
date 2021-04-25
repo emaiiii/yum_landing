@@ -5,7 +5,7 @@ import './Navigation.css';
 function Navigation() {
     return(
         <Navbar className="navbar-container" fixed="top">
-            <Navbar.Brand className="navbar-title" href="/">FitLib</Navbar.Brand>
+            <Navbar.Brand className="navbar-title" href="/">Yum</Navbar.Brand>
         </Navbar>
     );
 }
