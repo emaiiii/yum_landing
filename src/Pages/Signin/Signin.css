@@ -1,0 +1,11 @@
+.signin-page {
+    height: 100vh;
+}
+
+.signinpage-sct {
+    background-color: orange;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

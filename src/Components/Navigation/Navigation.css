@@ -5,9 +5,18 @@
     margin: 0;
 }
 
+.navbar-container {
+    position: absolute !important;
+    
+    display: flex;
+    width: 100%;
+    
+    top: 1vh !important;
+}
+
 .navbar-title {
     font-family: 'Oswald', sans-serif;
-    font-size: 48px !important;
+    font-size: 4vw !important;
     color: #ff7b00 !important;
 
     -webkit-text-stroke: 1px #333333;
@@ -21,13 +30,18 @@
     font-size: 16px !important;
     color: white !important;
 
-    margin-left: 30% !important;
-
     white-space: nowrap;
 }
 
 .navbar-link:hover {
     color: #bfbfbf !important;
+}
+
+.account-container {
+    display: flex;
+    position: absolute;
+
+    right: 4vw;
 }
 
 @media only screen and (max-width: 700px) {

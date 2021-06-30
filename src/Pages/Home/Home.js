@@ -3,13 +3,8 @@ import {Button} from 'react-bootstrap';
 import MailchimpSubscribe from "react-mailchimp-subscribe";
 
 import Navigation from '../../Components/Navigation/Navigation';
-import teacher from '../../Images/teacher.png';
-import schedule from '../../Images/schedule.png';
-import change from '../../Images/change.png';
-import money from '../../Images/money.png';
-import savemoney from '../../Images/savemoney.png';
-import relationship from '../../Images/relationship.png';
-
+import todo from '../../Images/todo.png';
+import points from '../../Images/points.png';
 
 import './Home.css';
 
@@ -25,81 +20,42 @@ function Home() {
         <div className="home-page">
             <Navigation/>
 
+            {/*Hero section 1*/}
             <div className="home-container1">
                 <section className="banner-container1">
-                    <h1 className="banner-text1">Discover <span className="banner-text1-hl">The Real Best Restaurants</span> Around You Through Food Experts Near You</h1>
-                    <h1 className="banner-text2">Don't Be Disappointed With Your Next Meal</h1>
-        
-                    <div className="button-container">
-                        <Button className="banner-button" size="sm" href="#creator-sct">For Creators</Button>
-                        <Button className="banner-button" size="sm" href="#user-sct">For Users</Button>
-                    </div>
-                    </section>
+                    <h1 className="banner-text1"><span className="fcOrange">Earn Points</span> to <span className="fcOrange">Collect Rewards</span> When You Eat at a Restaurant</h1>
+                    <Button className="banner-button" variant="warning" size="lg" href="#user-sct">Learn More</Button>
+                </section>
             </div>
 
+            {/*Info section 1*/}
             <div className="home-container2" id="user-sct">
                 <div className="banner-container2">
-                    <h1 className="f1 tc mb3 fcOrange txt1-mb2">Transform The Way You Find Your Next Meal</h1>
-                    <h1 className="f3 fw1 tc mb4 txt2-mb2">hello</h1>
+                    <h1 className="f1 tc mb3 fcOrange txt1-mb2">Transform the Way You Earn on Your Next Meal</h1>
+                    <h1 className="f3 fw1 tc mb4 txt2-mb2">At Yum, we have a deep appreciation for food and those that share this appreciation for food. That is why we want to 
+                    take the way food lovers earn rewards to the next level.</h1>
 
                     <div className="info1-container">
                         <div className="info1-sct">
-                            <img className="info1-pic" src={teacher} alt="s1"/>
-                            <h1 className="f4 fw5 fcOrange">Get Exclusive Content</h1>
-                            <h1 className="f4 fw1 tc">Learn from fitness creators to help keep you constantly progressing towards your fitness goals.</h1>
+                            <img className="info1-pic" src={todo} alt="s1"/>
+                            <h1 className="f4 fw5 tc fcOrange">What You Are Going to Do</h1>
+                            <h1 className="f4 fw1 tc">Whenever you go out for food or drinks, simply just search up the restaurant, check in, and take a picture of the receipt
+                            for your meal.</h1>
                         </div>
 
-                        <div className="info1-sct">
-                            <img className="info1-pic" src={schedule} alt="s2"/>
-                            <h1 className="f4 fw5 fcOrange">Get a Scheduler</h1>
-                            <h1 className="f4 fw1 tc">Have access to an easy-to-use scheduler tool to plan your workouts and keep yourself on track of your goals.</h1>
-                        </div>
+                        <div className="vl"></div>
 
                         <div className="info1-sct">
-                            <img className="info1-pic" src={change} alt="s3"/>
-                            <h1 className="f4 fw5 fcOrange">Make Workouts Your Own</h1>
-                            <h1 className="f4 fw1 tc">Be able to create and personalize workouts that you import from fitness creators themselves.</h1>
+                            <img className="info1-pic" src={points} alt="s2"/>
+                            <h1 className="f4 fw5 tc fcOrange">What You Get For Your Effort</h1>
+                            <h1 className="f4 fw1 tc">After you check in and upload a picture of your receipt, you will receive points that you can use to redeem rewards for more 
+                            food!</h1>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div className="info-spacer1">
-                <div className="info-spacer1-container">
-                    <h1 className="f1 fw2 spacer-text1">Join Our Mailing List to Receive Updates</h1>
-                    <Button className="info-button-mb" variant="outline-warning" size="lg" href="#newsletter-sct">Let's Go</Button>
-                </div>
-            </div>
-
-            <div className="home-container3" id="creator-sct">
-                <div className="banner-container3">
-                    <h1 className="f1 tc fcWhite txt1-mb2">Become A Food Expert Today</h1>
-                    <h1 className="f3 fw1 tc fcWhite txt2-mb2">On FitLib, fitness creators have the tools to create an online business 
-                    without having to worry about the technological side of having an online business. As a fitness creator starting
-                    on FitLib, you are entering the business of helping users towards achieving their fitness goals.</h1>
-                    <h1 className="f2 tc mt4 txt1-mb2">What's in it for Creators?</h1>
-
-                    <div className="info2-container">
-                        <div className="info2-sct">
-                            <img className="info2-pic" src={money} alt="s4"/>
-                            <h1 className="f4 fw5">Additional Income Stream</h1>
-                            <h1 className="f4 fw1 tc">Give fans insight on what it takes to get gains—give them the tools to succeed in their own fitness journey.</h1>
-                        </div>
-                        <div className="info2-sct">
-                            <img className="info2-pic" src={savemoney} alt="s5"/>
-                            <h1 className="f4 fw5">Save on Tech Expenses</h1>
-                            <h1 className="f4 fw1 tc">Avoid the expenses of building an online business—focus on the fitness and leave the tech to us.</h1>
-                        </div>
-                        <div className="info2-sct">
-                            <img className="info2-pic" src={relationship} alt="s6"/>
-                            <h1 className="f4 fw5">Connect With Your Biggest Fans</h1>
-                            <h1 className="f4 fw1 tc">Take on a deeper level of engagement with fans that look up to you and want to learn from you.</h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            {/*Newsletter*/}
+            {/*Newsletter section*/}
             <div className="newsletter-div" id="newsletter-sct">
                 <div className="newsletter-container">
                     <h1 className="font1 tc newsletter-header">Keep Up With Us While We Are Under Development</h1>
