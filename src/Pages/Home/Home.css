@@ -26,8 +26,8 @@ button {
     background: #ffc107 !important;
     color: #4d4d4d;
 
-    width: 8vw;
-    height: 4.5vh;
+    width: 6vw;
+    height: 4vh;
     
     margin-left: 1vw !important;
     padding: 0 !important; 
@@ -112,10 +112,10 @@ button:hover {
     border: none !important;
     border-radius: 20px !important;
 
-    font-size: 1.2vw !important;
+    font-size: 1vw !important;
     font-weight: 400 !important;
 
-    width: 10vw;
+    width: 8vw;
 
     margin: 10pt;
 }
@@ -396,6 +396,6 @@ button:hover {
     }
 
     button {
-        width: 20vw;
+        width: 10vw;
     }
 }

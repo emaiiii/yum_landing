@@ -12,10 +12,13 @@ function Signin() {
             <Navigation/>
             
             <div className="signinpage-sct"> 
-                <h1>hello</h1>
+                <div className="signin-info-sct">
+                    <h1>Earn Rewards For Food</h1>
+                    <h1>When You Buy Food!</h1>
+                </div>
                 <Signinbox className="signinbox-pos"/>
             </div>
-
+            
         </div>
     );
 }

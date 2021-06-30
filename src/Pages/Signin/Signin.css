@@ -1,11 +1,30 @@
 .signin-page {
     height: 100vh;
+    width: 100%;
+
+    position: absolute;
+    background-image: url('../../Images/foodbanner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .signinpage-sct {
-    background-color: orange;
+    height: 50vh;
+    
+    background-color: #f2f2f2;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    margin-top: 23vh;
+    padding-right: 12vw;
+    padding-left: 15vw;
+}
+
+.signin-info-sct {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }

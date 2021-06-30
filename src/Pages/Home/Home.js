@@ -23,7 +23,7 @@ function Home() {
             {/*Hero section 1*/}
             <div className="home-container1">
                 <section className="banner-container1">
-                    <h1 className="banner-text1"><span className="fcOrange">Earn Points</span> to <span className="fcOrange">Collect Rewards</span> When You Eat at a Restaurant</h1>
+                    <h1 className="banner-text1">Earn Points to <span className="fcOrange">Collect Rewards</span> When You Eat at a Restaurant</h1>
                     <Button className="banner-button" variant="warning" size="lg" href="#user-sct">Learn More</Button>
                 </section>
             </div>
